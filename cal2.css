@@ -1,0 +1,69 @@
+#body {
+  position: relative;
+  width: 574px;
+  height: 990px;
+  background-color: rgb(1, 1, 1);
+  margin: 0 auto;
+  text-align: center;
+  font-family: SamsungOneUIKorean;
+}
+.insertSection{
+  width: 100%;
+  height:200px;
+  top:8%;
+  position: relative;
+}
+.inputWindow{
+  width: 100%;
+  height: 50%;
+}
+.inputWindow .insert{
+  width: 80%;
+  height: 80%;
+  font-size: 40px;
+}
+.inputWindow .result{
+  width: 80%;
+  height:80%;
+  font-size: 40px;
+}
+.padSection{
+  position: relative;
+  top:12%;
+}
+.numPad {
+  color: white;
+  font-size: 45px;
+}
+
+.numPad div {
+  background-color: rgb(23, 23, 23);
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+.padSection .numPad:first-child {
+  color: rgb(155, 201, 111);
+}
+
+.padSection .numPad div:last-child {
+  color: rgb(155, 201, 111);
+}
+
+#clear {
+  color: rgb(217, 117, 127);
+}
+
+#equal {
+  color: white;
+  background-color: rgb(66, 126, 4);
+}
+
+
