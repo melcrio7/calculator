@@ -1,38 +1,46 @@
 #body {
-  position: relative;
-  width: 574px;
+  width: 570px;
   height: 990px;
   background-color: rgb(1, 1, 1);
   margin: 0 auto;
   text-align: center;
   font-family: SamsungOneUIKorean;
 }
-.insertSection{
-  width: 100%;
-  height:200px;
-  top:8%;
+
+.insertSection {
   position: relative;
+  top: 40px;
+  width: 570px;
+  height: 100px;
+  display: table;
 }
-.inputWindow{
-  width: 100%;
-  height: 50%;
+
+.inputWindow {
+  vertical-align: middle;
+  display: table-cell;
 }
-.inputWindow .insert{
-  width: 80%;
-  height: 80%;
+
+input {
+  width: 480px;
+  height: 80px;
   font-size: 40px;
-}
-.inputWindow .result{
-  width: 80%;
-  height:80%;
-  font-size: 40px;
-}
-.padSection{
-  position: relative;
-  top:12%;
-}
-.numPad {
+  background-color: rgb(1, 1, 1);
+  outline: none;
+  border: none;
   color: white;
+}
+
+.calPreview{
+  color:#5E5E5E;
+}
+
+.padSection {
+  position: relative;
+  top: 12%;
+}
+
+.numPad {
+  color: #FBFBFB;
   font-size: 45px;
 }
 
