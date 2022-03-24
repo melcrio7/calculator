@@ -24,10 +24,11 @@ input {
   width: 480px;
   height: 80px;
   font-size: 40px;
-  background-color: rgb(1, 1, 1);
+  background-color:  rgb(1, 1, 1);
   outline: none;
   border: none;
   color: white;
+  text-align: right;
 }
 
 input[type="number"]::-webkit-inner-spin-button {

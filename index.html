@@ -9,12 +9,12 @@
 <div id="body">
   <div class="insertSection">
     <div class="inputWindow">
-    <input type="number" class="insert">
+    <input type="text" class="insert" min="0" max="999999999999999" maxlength="15">
     </div>
   </div>
   <div class="insertSection">
     <div class="inputWindow">
-      <input type="number" class="calPreview">
+      <input type="text"  readonly class="calPreview" min="0" max="999999999999999"maxlength="15" value="99988">
     </div>
   </div>
   <div class="padSection">
@@ -51,6 +51,13 @@
   </div>
 </div>
 </body>
+<script>
+  function checkMaxLength(object){
+    if(object.value.length > object.maxLength){
+      object.value = object.value.slice(0, object.maxLength);
+    }
+  }
+</script>
 
 
 </html>
