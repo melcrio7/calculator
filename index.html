@@ -4,59 +4,56 @@
   <meta charset="UTF-8">
   <title>My calculator mission</title>
   <link href="cal2.css" rel="stylesheet" type="text/css">
+  <script src="cal2.js"></script>
 </head>
 <body>
 <div id="body">
   <div class="insertSection">
     <div class="inputWindow">
-    <input type="text" class="insert" min="0" max="999999999999999" maxlength="15">
+      <input id="display" type="text" class="insert" min="0" max="999999999999999" maxlength="15">
     </div>
   </div>
   <div class="insertSection">
     <div class="inputWindow">
-      <input type="text"  readonly class="calPreview" min="0" max="999999999999999"maxlength="15" value="99988">
+      <input type="text" readonly class="calPreview" min="0" max="999999999999999" maxlength="15">
     </div>
   </div>
   <div class="padSection">
-  <div class="numPad">
-    <div id="clear">C</div>
-    <div>( )</div>
-    <div>%</div>
-    <div>÷</div>
-  </div>
-  <div class="numPad">
-    <div>7</div>
-    <div>8</div>
-    <div>9</div>
-    <div>×</div>
-  </div>
-  <div class="numPad">
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>-</div>
-  </div>
-  <div class="numPad">
-    <div>1</div>
-    <div>2</div>
-    <div>3</div>
-    <div>+</div>
-  </div>
-  <div class="numPad">
-    <div>+/-</div>
-    <div>0</div>
-    <div>.</div>
-    <div id="equal">=</div>
-  </div>
+    <div class="numPad">
+      <div id="clear">C</div>
+      <div>( )</div>
+      <div onclick="addOutput('%')">%</div>
+      <div onclick="addOutput('÷')">÷</div>
+    </div>
+    <div class="numPad">
+      <div onclick="addOutput(7)">7</div>
+      <div onclick="addOutput(8)">8</div>
+      <div onclick="addOutput(9)">9</div>
+      <div onclick="addOutput('×')">×</div>
+    </div>
+    <div class="numPad">
+      <div onclick="addOutput(4)">4</div>
+      <div onclick="addOutput(5)">5</div>
+      <div onclick="addOutput(6)">6</div>
+      <div onclick="addOutput('-')">-</div>
+    </div>
+    <div class="numPad">
+      <div onclick="addOutput(1)">1</div>
+      <div onclick="addOutput(2)">2</div>
+      <div onclick="addOutput(3)">3</div>
+      <div onclick="addOutput('+')">+</div>
+    </div>
+    <div class="numPad">
+      <div>+/-</div>
+      <div onclick="addOutput(0)">0</div>
+      <div onclick="addOutput('.')">.</div>
+      <div id="equal">=</div>
+    </div>
   </div>
 </div>
 </body>
 <script>
-  function checkMaxLength(object){
-    if(object.value.length > object.maxLength){
-      object.value = object.value.slice(0, object.maxLength);
-    }
-  }
+
 </script>
 
 
